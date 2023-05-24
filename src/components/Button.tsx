@@ -1,6 +1,6 @@
 import { Button as ButtonNativeBase, Text, IButtonProps } from 'native-base';
 
-export interface Props extends IButtonProps{
+export interface Props extends IButtonProps {
     title: string;
     type?: 'PRIMARY' | 'SECUNDARY';
 }
@@ -24,7 +24,7 @@ export function Button({ title, type = 'PRIMARY', ...rest }: Props) {
             <Text
             fontSize="sm"
             fontFamily="heading"
-            color={type == 'SECUNDARY' ? 'white' : 'black'}
+            color={type === 'SECUNDARY' ? 'white' : 'black'}
             >
                 {title}
             </Text>
