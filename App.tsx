@@ -2,7 +2,7 @@ import { NativeBaseProvider, StatusBar, Center, Text, View } from 'native-base';
 import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import { theme } from './src/styles/theme';
-import { Pools } from './src/screens/Pools';
+import { New2 } from './src/screens/New2';
 import { Loading } from './src/components/Loading';
 import { AuthContextProvider } from './src/contexts/AuthContext';
 
@@ -18,7 +18,7 @@ export default function App() {
           barStyle="light-content"
           translucent
         /> 
-        {fontsLoaded ? < Pools /> : <Loading />}
+        {fontsLoaded ? < New2 /> : <Loading />}
         </AuthContextProvider>
       </NativeBaseProvider>
     );
